@@ -2,29 +2,27 @@
 
 ## 專案結構
 
-<details> <summary><strong>shoppingProject 專案結構</strong></summary>
-
-程式碼
+```text
 shoppingProject/
 ├── src/
 │   ├── main/
 │   │   ├── java/
 │   │   │   └── com/tw/shopping/
-│   │   │       ├── controller/                 # 控制器層，處理 HTTP 請求與回應
-│   │   │       ├── entity/                     # 資料模型，對應資料庫表格
-│   │   │       ├── exception/                  # 自訂例外處理類別
-│   │   │       ├── repository/                 # 資料存取層，使用 Spring Data JPA
-│   │   │       ├── service/                    # 商業邏輯層，處理核心邏輯
-│   │   │       ├── util/                       # 工具類別，輔助功能模組
-│   │   │       └── ShoppingProjectApplication.java  # 主程式入口
-│   └── resources/
-│       ├── static/                             # 靜態資源（HTML、CSS、JS）
-│       └── application.properties              # Spring Boot 設定檔
-├── test/
-│   └── java/com/tw/shopping/                   # 測試類別
-├── pom.xml                                     # Maven 設定檔
-└── mvnw / mvnw.cmd                             # Maven Wrapper
-</details>
+│   │   │       ├── controller/             # 控制器層，處理 HTTP 請求與回應
+│   │   │       ├── entity/                 # 資料模型，對應資料庫表格
+│   │   │       ├── exception/              # 自訂例外處理類別
+│   │   │       ├── repository/             # 資料存取層，使用 Spring Data JPA
+│   │   │       ├── service/                # 商業邏輯層，處理核心邏輯
+│   │   │       ├── util/                   # 工具類別，輔助功能模組
+│   │   │       └── ShoppingProjectApplication.java # 主程式入口
+│   │   └── resources/
+│   │       ├── static/                     # 靜態資源 (HTML、CSS、JS)
+│   │       └── application.properties      # Spring Boot 設定檔
+│   └── test/
+│       └── java/com/tw/shopping/           # 測試類別
+├── pom.xml                                 # Maven 設定檔
+├── mvnw
+└── mvnw.cmd                                # Maven Wrapper
 
 
 ---
@@ -43,7 +41,7 @@ shoppingProject/
 
 ## MySQL 資料庫設定
 
-⚠️ **注意**：請先開啟 **MAMP**，否則 Spring Boot 無法連線到 MySQL。
+ **注意**：請先開啟 **MAMP**，否則 Spring Boot 無法連線到 MySQL。
 
 請在 `src/main/resources/application.properties` 中加入以下設定：
 
