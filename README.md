@@ -22,6 +22,7 @@ shoppingProject/
 │       └── java/com/tw/shopping/           # 測試類別
 ├── pom.xml                                 # Maven 設定檔
 ├── mvnw
+├── docs/                                   # 放補充說明文件
 └── mvnw.cmd                                # Maven Wrapper
 
 
