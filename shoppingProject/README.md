@@ -8,9 +8,10 @@ shoppingProject/
 │   ├── main/
 │   │   ├── java/
 │   │   │   └── com/tw/shopping/
+│   │   │       ├── config/                 # 系統層級、全域性，設定檔
 │   │   │       ├── controller/             # 控制器層，處理 HTTP 請求與回應
 │   │   │       ├── entity/                 # 資料模型，對應資料庫表格
-│   │   │       ├── exception/              # 自訂例外處理類別
+│   │   │       ├── dto/                    # 資料傳輸物件
 │   │   │       ├── repository/             # 資料存取層，使用 Spring Data JPA
 │   │   │       ├── service/                # 商業邏輯層，處理核心邏輯
 │   │   │       ├── util/                   # 工具類別，輔助功能模組
@@ -29,13 +30,15 @@ shoppingProject/
 
 ## 各 Package 說明
 
-| Package     | 用途                          | 建議檔案                                   |
-|-------------|-------------------------------|--------------------------------------------|
+| Package     | 用途                        | 建議檔案                                          |
+|-------------|-----------------------------|--------------------------------------------------|
+| config      | 系統層級、全域性，設定檔      | -                                                |
 | controller  | 控制器層，處理 API 請求與回應 | `ShoppingController.java`, `UserController.java` |
-| entity      | 資料模型，對應資料庫表格      | `Product.java`, `User.java`, `Order.java`  |
-| repository  | 資料存取層，定義 JPA 介面     | `ProductRepository.java`, `UserRepository.java` |
-| service     | 商業邏輯層，封裝核心功能      | `ProductService.java`, `UserService.java`  |
-| util        | 工具類別，輔助功能模組        | -                                          |
+| entity      | 資料模型，對應資料庫表格      | `Product.java`, `User.java`, `Order.java`        |
+| dto         | 資料傳輸物件                 | `UserResponse.java`, `ProductResponse.java`      |        
+| repository  | 資料存取層，定義 JPA 介面     | `ProductRepository.java`, `UserRepository.java   |
+| service     | 商業邏輯層，封裝核心功能      | `ProductService.java`, `UserService.java`        |
+| util        | 工具類別，輔助功能模組        | -                                          
 
 ---
 
